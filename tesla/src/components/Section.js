@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import styled from "styled-components";
+
 
 function Section() {
   return (
-    <div>Section</div>
+    <Wrap>
+
+    </Wrap>
   )
 }
 
 export default Section
+
+const Wrap = styled.div`
+    width: 100vw;
+    hight: 100vh;
+    bakcground-image: url('/images/model-s.jpg');
+`

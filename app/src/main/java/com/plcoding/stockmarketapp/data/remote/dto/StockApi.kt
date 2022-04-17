@@ -5,11 +5,11 @@ import okhttp3.ResponseBody
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface Stockapi {
+interface StockApi {
 
     @GET("query?function=LISTING_STATUS")
-    suspend fun getlisting(
-        @Query("apiKey") apikey: String
+    suspend fun getListing(
+        @Query("apiKey") apikey: String = API_KEY
     ):ResponseBody
 
     // Limited to 5 Request per API_KEY

@@ -24,5 +24,5 @@ interface StockDao {
     )
 
 
-    suspend fun searchCompanyling(query: String): List<CompanyListingEntity>
+    suspend fun searchCompanyListing(query: String): List<CompanyListingEntity>
 }
